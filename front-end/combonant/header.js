@@ -1,13 +1,3 @@
-
-
-export default function Button () {
-    return (
-        <div>
-            <button>code somting</button>
-        </div>
-    )
-}
- 
 export default function Header () {
     return (
         <div>
