@@ -6,7 +6,6 @@ import Content from './Content';
 
 function Home() {
     const { Footer } = Layout;
-
     return (
         <Layout style={{border: '1px solid var(--semi-color-border)'}}>
           <Header/>

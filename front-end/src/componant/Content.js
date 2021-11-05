@@ -6,7 +6,7 @@ import Video from './vid';
 function Content() {
     const  { Content, Sider  } = Layout
     return (
-        <Layout style={ { height: '100vh' } }>
+        <Layout style={ { height: '691px' } }>
             <Sider style={ { backgroundColor: 'var(--semi-color-bg-1)' } }>
                   <Nav
                       style={ { maxWidth: 250, height: '100%' } }
@@ -31,7 +31,20 @@ function Content() {
               <div className="grid">
                 <Row>
                     <Col span={8}><div className="col-content">col-7</div></Col>
-                    <Col span={8}><div className="col-content"><Video/><Video/></div></Col>
+                    <Col span={8}>
+                        <div className="col-content">
+                        <Video 
+                        src="videos/download.mp4" 
+                        title="mot chiec nhac thu vi"
+                        name="Some one"
+                        />
+                        <Video 
+                        src="videos/download.mp4" 
+                        title="mot chiec nhac thu vi"
+                        name="Some one"
+                        />
+                        </div>
+                    </Col>
                     <Col span={8}><div className="col-content">col-8</div></Col>
                 </Row>
               </div>
