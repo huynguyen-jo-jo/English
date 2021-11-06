@@ -4,7 +4,7 @@ import { Layout } from '@douyinfe/semi-ui';
 import Header from './Header';
 import Content from './Content';
 
-function Home() {
+function ShortMoment() {
     const { Footer } = Layout;
     return (
         <Layout style={{border: '1px solid var(--semi-color-border)'}}>
@@ -14,4 +14,4 @@ function Home() {
         </Layout>
     )
 }
-export default Home
+export default ShortMoment

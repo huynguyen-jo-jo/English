@@ -1,12 +1,18 @@
 
 import './App.css';
-import Home from './componant/Home'
+import ShortMoment from './componant/ShortMoment'
+
+import { Route, Routes, BrowserRouter } from 'react-router-dom'
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Home/>
-      </header>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<ShortMoment/>} path="/short-moment"/>
+        
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

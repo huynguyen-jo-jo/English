@@ -30,22 +30,22 @@ function Content() {
               >
               <div className="grid">
                 <Row>
-                    <Col span={8}><div className="col-content">col-7</div></Col>
+                    <Col span={8}><div className="col-content">Demo</div></Col>
                     <Col span={8}>
                         <div className="col-content">
                         <Video 
                         src="videos/download.mp4" 
-                        title="mot chiec nhac thu vi"
-                        name="Some one"
+                        title="Do you like this song?"
+                        name="Admin"
                         />
                         <Video 
                         src="videos/download.mp4" 
-                        title="mot chiec nhac thu vi"
-                        name="Some one"
+                        title="Do you like this song?"
+                        name="Admin"
                         />
                         </div>
                     </Col>
-                    <Col span={8}><div className="col-content">col-8</div></Col>
+                    <Col span={8}><div className="col-content">Demo</div></Col>
                 </Row>
               </div>
             </Content>
