@@ -2,7 +2,43 @@ import { Layout, Nav, Col, Row } from '@douyinfe/semi-ui';
 import { IconHome, IconHistogram, IconLive, IconSetting } from '@douyinfe/semi-icons';
 import Video from './vid';
 
-
+const listVideo = [
+    {
+        src: 'videos/video1.mp4',
+        title: "Do you like this song?",
+        name: "Jack",
+        userName: "AM",
+        usercolor:"red"
+    },
+    {
+        src: 'videos/video2.mp4',
+        title: "Do you like this song?",
+        name: "Mun",
+        userName: "AM",
+        usercolor:  "red"
+    },
+    {
+        src: 'videos/video3.mp4',
+        title: "Do you like this song?",
+        name: "Bun",
+        userName: "AM",
+        usercolor: "light-blue"
+    },
+    {
+        src: 'videos/video4.mp4',
+        title: "Do you like this song?",
+        name: "Hi",
+        userName: "HH",
+        usercolor: "amber"
+    },
+    {
+        src: 'videos/video5.mp4',
+        title: "Do you like this song?",
+        name: "Admin",
+        userName: "NN",
+        usercolor: "red"
+    },
+]
 function Content() {
     const  { Content, Sider  } = Layout
     return (
@@ -19,8 +55,9 @@ function Content() {
                       ]}
                       footer={{
                           collapseButton: true,
+                          collapseText: 'Close'
                       }}
-                  />
+                  ></Nav>
             </Sider>
             <Content
                 style={{
@@ -33,16 +70,7 @@ function Content() {
                     <Col span={8}><div className="col-content">Demo</div></Col>
                     <Col span={8}>
                         <div className="col-content">
-                        <Video 
-                        src="videos/download.mp4" 
-                        title="Do you like this song?"
-                        name="Admin"
-                        />
-                        <Video 
-                        src="videos/download.mp4" 
-                        title="Do you like this song?"
-                        name="Admin"
-                        />
+                        { listVideo.map( video => { return <Video {...video}/> } )}
                         </div>
                     </Col>
                     <Col span={8}><div className="col-content">Demo</div></Col>

@@ -1,6 +1,6 @@
 import { Layout, Nav, Button, Avatar, Input, } from '@douyinfe/semi-ui';
-import { IconFaceuLogo, IconBell, IconHelpCircle, IconHome, IconLive, IconSetting, IconSearch } from '@douyinfe/semi-icons';
-
+import { IconFaceuLogo, IconUpload, IconHelpCircle, IconHome, IconLive, IconSetting, IconSearch } from '@douyinfe/semi-icons';
+import User from './User';
 
 function Header() {
     const { Header } = Layout
@@ -20,7 +20,7 @@ function Header() {
               <Nav.Footer>
                 <Button
                   theme="borderless"
-                  icon = {<IconBell size="large"/>}
+                  icon = {<IconUpload size="extra-large"/>}
                   style={{
                     color:'var(--semi-color-text-2)',
                     marginRight: '12px',
@@ -34,7 +34,7 @@ function Header() {
                     marginRight: '12px',
                   }}
                 />
-                <Avatar color='orange' size='small'>YJ</Avatar>
+                <User/>
               </Nav.Footer>
             </Nav>
           </div>
