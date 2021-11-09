@@ -1,4 +1,4 @@
-import { Layout, Nav, Button, Avatar, Input, } from '@douyinfe/semi-ui';
+import { Layout, Nav, Button, Input } from '@douyinfe/semi-ui';
 import { IconFaceuLogo, IconUpload, IconHelpCircle, IconHome, IconLive, IconSetting, IconSearch } from '@douyinfe/semi-icons';
 import User from './User';
 
@@ -11,9 +11,9 @@ function Header() {
               <Nav.Header>
                 <IconFaceuLogo style={{ fontSize: 36 }} />
               </Nav.Header>
-              <Nav.Item itemKey='Home' text='Home' icon={<IconHome size="large" />} />
-              <Nav.Item itemKey='Live' text='Short moment' icon={<IconLive size="large" />} />
-              <Nav.Item itemKey='Setting' text='Setting' icon={<IconSetting size="large" />} />
+              <Nav.Item itemKey='Home' text='Home' icon={<IconHome size="large" />}  />
+              <Nav.Item itemKey='Live' text='Short moment' icon={<IconLive size="large"/>} link='/short-moment'/>
+              <Nav.Item itemKey='Login' text='Login' icon={<IconSetting size="large"   />} link='/login' />
               <Nav.Item itemKey='Search'> 
                 <Input   suffix={<IconSearch />} showClear></Input>
               </Nav.Item>

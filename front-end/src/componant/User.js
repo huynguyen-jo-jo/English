@@ -1,4 +1,4 @@
-import {  Avatar, Dropdown, Tag } from '@douyinfe/semi-ui';
+import {  Avatar, Dropdown } from '@douyinfe/semi-ui';
 import  { Fragment } from 'react';
 
 
@@ -20,7 +20,6 @@ function User() {
                 </Dropdown.Menu>
             }
         >
-            {/* <Tag><Avatar onClick={click} color='orange' size='small'>YJ</Avatar></Tag> */}
             <Avatar onClick={click} color='orange' size='small'>YJ</Avatar>
         </Dropdown>   
         </Fragment>
